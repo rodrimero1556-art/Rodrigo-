@@ -3,7 +3,7 @@ function PiePagina(){
 
     return(
         <footer className="pie">
-            <p>SENA - CTIP - {anio}</p>
+            <p>SENA - CTPI - {anio}</p>
 
         </footer>
     )

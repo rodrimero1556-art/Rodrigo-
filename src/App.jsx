@@ -1,3 +1,4 @@
+import fotoPerfil from "./images/fotos1.jpg";
 import './App.css';
 import Encabezado from "./components/Encabezado";
 import Sidebar from "./components/Sidebar";
@@ -8,11 +9,19 @@ import PiePagina from "./components/PiePagina";
 function App() {
   const programa = "Analisis y Desarrollo de Software";
 
+  const usuario = {
+  nombre: 'Luis Rodrigo',
+  rol: 'Aprendiz ADSO',
+  foto: fotoPerfil,
+  correo: 'rodrigo@sena.edu.co'
+
+
+}
   return (
     <div className="app-padre">
-      <Encabezado />
+      <Encabezado  usuario = { usuario }/>
       <div className="app-layout">
-        <Sidebar />
+        <Sidebar  usuario = { usuario }/>
         <main className="contenido">
           <h2>Bienvenido al Programa {programa}</h2>
           <Presentacion />
